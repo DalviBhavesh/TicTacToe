@@ -192,10 +192,16 @@ function App() {
         </div>
         <div className='mt-3'>
           <button 
-            className='text-lg bg-red-500 shadow-lg  p-3 rounded-lg hover:bg-red-600 text-white'
+            className='text-lg font-bold bg-red-500 shadow-lg m-2 p-3 px-5 rounded-lg hover:bg-red-600 text-white'
+            onClick={()=>{history.back()}}  
+          >
+              EXIT
+          </button>
+          <button 
+            className='text-lg font-bold bg-lime-500 shadow-lg  p-3 rounded-lg hover:bg-lime-600 text-white'
             onClick={()=>{location.reload()}}  
           >
-              Reset
+              RESET
           </button>
         </div>
     </div>
